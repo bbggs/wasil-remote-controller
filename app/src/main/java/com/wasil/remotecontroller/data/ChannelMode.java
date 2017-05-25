@@ -1,10 +1,10 @@
-package com.wasil.remotecontroller.home.domain;
+package com.wasil.remotecontroller.data;
 
 /**
  * Created by slomek on 25.05.17.
  */
 
-public enum ChannelModes {
+public enum ChannelMode {
     DAILY,
     TIMER,
     MANUALx
