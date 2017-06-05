@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/margin_item"
+    android:paddingEnd="@dimen/margin_dialog"
+    android:paddingStart="@dimen/margin_dialog"
+    android:paddingTop="@dimen/margin_item">
+
+    <Spinner
+        android:id="@+id/mode_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/label_mode"
+        android:spinnerMode="dropdown">
+
+    </Spinner>
+
+    <TextView
+        android:id="@id/label_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/mode_spinner"
+        android:layout_alignTop="@id/mode_spinner"
+        android:gravity="center"
+        android:text="@string/mode" />
+
+    <RelativeLayout
+        android:id="@+id/time_pickers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mode_spinner"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/label_time_picker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Label 1" />
+
+        <TimePicker
+            android:id="@+id/time_picker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_time_picker1"
+            android:timePickerMode="spinner" />
+
+        <TextView
+            android:id="@+id/label_time_picker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_picker1"
+            tools:text="Label 2" />
+
+        <TimePicker
+            android:id="@+id/time_picker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/label_time_picker2"
+            android:timePickerMode="spinner" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_pickers"
+
+        android:text="@string/save" />
+
+    <FrameLayout
+        android:id="@+id/progress_bar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:alpha="0.6"
+        >
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>

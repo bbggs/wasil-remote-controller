@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ChannelsItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_item</item>
+        <item name="android:background">@drawable/rect_rounded_gray</item>
+        <item name="android:padding">@dimen/margin_item</item>
+    </style>
+
 </resources>

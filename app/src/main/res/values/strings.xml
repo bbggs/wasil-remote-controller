@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RemoteController</string>
+    <string name="channel_number">Channel nr %d</string>
+    <string name="download_error">Error occured while downloading</string>
+    <string name="download_succes">Done</string>
+    <string name="simply_on_off">Simply On/Off</string>
+    <string name="daily">Daily</string>
+    <string name="mode">Mode: \u0020</string>
+    <string name="save">Save</string>
 </resources>

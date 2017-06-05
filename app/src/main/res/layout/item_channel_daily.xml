@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    style="@style/ChannelsItem">
+
+    <include layout="@layout/item_header" android:id="@+id/header"/>
+
+    <RelativeLayout
+        android:id="@+id/data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/header"
+        android:layout_toStartOf="@id/settings_button"
+        android:layout_alignBottom="@id/header"
+        android:layout_marginEnd="@dimen/margin_item"
+        android:layout_marginStart="@dimen/margin_item"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/title_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/mode"/>
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/title_mode"
+            android:text="@string/daily"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/title_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_mode"
+            android:textStyle="bold"
+            android:text="Start Time "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_time"
+            android:layout_toEndOf="@id/title_start_time"
+            android:layout_alignTop="@id/title_start_time"
+            android:text="--: -- : --"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/title_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_start_time"
+            android:textStyle="bold"
+            android:text="End Time "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_time"
+            android:layout_toEndOf="@id/title_end_time"
+            android:layout_alignTop="@id/title_end_time"
+            android:text="--: -- : --"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/button_settings" />
+
+</RelativeLayout>

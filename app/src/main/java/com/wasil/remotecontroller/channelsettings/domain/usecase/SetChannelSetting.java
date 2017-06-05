@@ -1,7 +1,7 @@
 package com.wasil.remotecontroller.channelsettings.domain.usecase;
 
 import com.wasil.remotecontroller.UseCaseRx;
-import com.wasil.remotecontroller.data.ChannelSettings;
+import com.wasil.remotecontroller.data.model.ChannelSettings;
 import com.wasil.remotecontroller.data.ChannelsDAO;
 
 import rx.Observable;
@@ -33,7 +33,7 @@ public class SetChannelSetting extends UseCaseRx<SetChannelSetting.RequestValues
             channelsDAO.setChannel(requestValues.getChannelSettings());
             subscriber.onCompleted();
                 }
-        );
+        );  
     }
 
     public static final class RequestValues implements UseCaseRx.RequestValues {

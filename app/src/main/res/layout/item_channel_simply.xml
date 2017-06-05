@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    style="@style/ChannelsItem">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/item_header" />
+
+    <RelativeLayout
+        android:id="@+id/data_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/header"
+        android:layout_alignTop="@id/header"
+        android:layout_marginEnd="@dimen/margin_item"
+        android:layout_marginStart="@dimen/margin_item"
+        android:layout_toEndOf="@id/header"
+        android:layout_toStartOf="@id/settings_button"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/title_mode"
+            android:text="@string/simply_on_off" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/button_settings" />
+
+</RelativeLayout>

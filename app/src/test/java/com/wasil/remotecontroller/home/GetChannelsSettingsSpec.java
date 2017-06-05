@@ -1,7 +1,7 @@
 package com.wasil.remotecontroller.home;
 
 import com.wasil.remotecontroller.data.ChannelsDAO;
-import com.wasil.remotecontroller.home.domain.usecase.GetChannelsSettings;
+import com.wasil.remotecontroller.home.domain.usecase.GetSettings;
 
 import org.junit.Test;
 import org.mockito.Mock;
@@ -12,7 +12,7 @@ import org.mockito.Mock;
 
 public class GetChannelsSettingsSpec {
 
-    private GetChannelsSettings getChannelsSettings;
+    private GetSettings getSettings;
 
     @Mock
     private ChannelsDAO channelsDAO;

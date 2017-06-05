@@ -6,4 +6,5 @@ package com.wasil.remotecontroller;
 
 public interface BasePresenter {
     void start();
+    void unsubscribe();
 }

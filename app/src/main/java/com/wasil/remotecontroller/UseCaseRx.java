@@ -25,6 +25,7 @@ public abstract class UseCaseRx<Q extends UseCaseRx.RequestValues, P extends Use
     }
 
     public interface RequestValues {
+
     }
 
     public interface ResponseValues {
